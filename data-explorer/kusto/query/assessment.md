@@ -5,12 +5,39 @@ ms.reviewer: orspod
 ms.topic: reference
 ms.date: 08/11/2024
 ---
-# Kusto Query Language
-
-Kusto Query Language is a powerful tool to explore your data and discover patterns, identify anomalies and outliers, create statistical modeling, etc. 
-You can query different kinds of data. The language is expressive, easy to read and understand the query intent, and optimized for authoring experiences. Kusto Query Language is optimal for querying telemetry, metrics, and logs with deep support for text search and parsing, time-series operators and functions, analytics and aggregation, geospatial, vector similarity searches, and many other language constructs that provide the most optimal language for data analysis. The query uses schema entities that are organized in a hierarchy similar to SQLs: databases, tables, and columns.
+# Introduction to Kusto Query Language (KQL)
 
 This article provides an explanation of the query language and offers practical exercises to get you started writing queries. To access the query environment, use the [Azure Data Explorer web UI](https://dataexplorer.azure.com/). To learn how to use KQL, see [Tutorial: Learn common operators](tutorials/learn-common-operators.md).
+
+Kusto Query Language is a powerful tool for data exploration, pattern discovery, and statistical analysis. It's designed to efficiently query various types of data, with particular strength in handling telemetry, metrics, and logs. The language is expressively designed to be both readable and optimized for performance.
+
+# Core Features
+-Deep support for text search and parsing
+
+-Time-series operators and functions
+
+-Analytics and aggregation capabilities
+
+-Geospatial analysis functions
+
+-Vector similarity searches
+
+-Optimized data analysis constructs
+
+# Schema Organization
+Similar to SQL, KQL uses a hierarchical organization of:
+
+-Databases
+
+-Tables
+
+-Columns
+
+# Query Structure and Operation
+## Basic Query Components
+A Kusto query is a read-only request that processes data and returns results. Queries consist of one or more statements, written in plain text using a data-flow model.
+
+## Types of QUery Statements
 
 The most common kind of query statement is a tabular expression **statement**, which means both its input and output consist of tables or tabular datasets. Tabular statements contain zero or more **operators**, each of which starts with a tabular input and returns a tabular output. Operators are sequenced by a `|` (pipe). Data flows, or is piped, from one operator to the next. The data is filtered or manipulated at each step and then fed into the following step.
 
